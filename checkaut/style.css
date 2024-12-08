@@ -1,0 +1,166 @@
+/* creat by mohamrd drajou */
+
+
+.modal {
+  width: fit-content;
+  height: fit-content;
+  background: #fdfdfd;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 480px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Payment Options */
+.payment--options {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 10px;
+}
+
+.payment--options button {
+  flex: 1;
+  height: 55px;
+  background: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.payment--options button:hover {
+  background: #e8e8e8;
+  border-color: #bbb;
+}
+
+.payment--options button svg {
+  height: 22px;
+}
+
+/* Separator Styling */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.separator .line {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  margin: 0 10px;
+}
+
+/* Credit Card Info Form */
+.credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input_label {
+  font-size: 12px;
+  color: #7a7a7a;
+  font-weight: bold;
+}
+
+.input_field {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.input_field:focus {
+  border-color: #0078d7;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.2);
+}
+
+/* Split Inputs */
+.split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.split input {
+  width: 100%;
+}
+
+/* Button Styling */
+
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+ }
+ 
+ .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+ }
+ 
+ .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+ }
+ 
+ .btn:active {
+  transform: scale(0.9);
+ }
+
+/* Number Input Reset */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_field[type="number"] {
+  -moz-appearance: textfield;
+}
